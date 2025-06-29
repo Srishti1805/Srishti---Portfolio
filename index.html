@@ -1,646 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Srishti Adkar Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srishti Adkar - Software Engineer & UX Designer</title>
     
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+
+    /*======================================
+    //--//-->   ABOUT
+    ======================================*/
+
+    .about-mf .box-shadow-full {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .about-mf .about-img {
+      margin-bottom: 2rem;
+    }
+
+    .about-mf .about-img img {
+      margin-left: 10px;
+    }
 
 
-<style>
+    .skill-mf .progress {
+      /* background-color: #cde1f8; */
+      margin: .5rem 0 1.2rem 0;
+      border-radius: 0;
+      height: .7rem;
+    }
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
+    .skill-mf .progress .progress-bar {
+      height: .7rem;
+      background-color: #ffbd39;
+    }
 
 
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
+    /* Animation styles */
+    #typing-animation {
+      position: relative;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(20, end) infinite;
+    }
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
+    #typing-animation:before {
+      content: "";
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ccc;
+      animation: typing-cursor 0.5s ease-in-out infinite;
+    }
 
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
 
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
+    @keyframes typing-cursor {
+      from {
+        width: 5px;
+      }
+      to {
+        width: 0;
+      }
+    }
 
 
-/* project image zoom effect */
+    /* project image zoom effect */
 
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
+    .zoom-effect {
+      overflow: hidden;
+      transition: transform 0.3s ease-out;
+    }
 
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
+    .zoom-effect:hover {
+      transform: scale(1.1);
+    }
 
 
-</style>
-
+    </style>
 
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Srishti Adkar</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Srishti</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Engineer  ',
-						'Designer',
-						'Developer',
-						'Tester'
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>A Software Engineer and UX Designer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://spendsmart.my.canva.site/" class="btn btn-primary py-3 px-4">UI UX Portfolio</a> 
-							<a href="https://github.com/Srishti1805" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.jpeg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s"> </span> <span>Srishti Adkar</span></p>
-										<p><span class="title-s"></span> <span>Software engineer</span></p>
-										<p><span class="title-s"></span> <span>2 years of professional experience</span></p>
-										<p><span class="title-s"></span> <span>Washington, United States of America</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>Django</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>React</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>With over 2 years of comprehensive experience in the field of data science & software engineering, accompanied by a bachelor's degree in engineering.
-									Currently pursuing master's in Computer Science from Seattle University.
-									Proficient in data analysis, statistical analysis, developing APIs in Django &amp; machine learning. 
-									Demonstrated success in leading impactful projects and providing effective mentorship.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Software Engineer</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Backend Developer &amp; Data Modeling</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering , Currently pursuing master's in Computer Science </span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>Programming Languages:</span> <span>C, C++, Javascript  &amp; Python</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>AWS, Azure, Angular, Git, ASP, .NET &amp; React</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Badminton, Teaching</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/srishti-adkar-3022411b1/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>Experienced Software Engineer with expertise in backend development and AI applications. Proven skills in designing and optimizing Django-based APIs, developing machine learning architectures, and leading cross-functional teams to enhance project workflows and data protection. Passionate about building scalable, user-focused solutions and continuous learning in the field of AI and software development.</p>
-          </div>
-        </div>
-
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">June 2024 - Present</span>
-						<h2>Software Engineering Intern</h2>
-						<span class="position">St. Francis House, Seattle</span>
-						<br>
-						<br>
-						<!-- <p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
-							<ul>
-								<li>Developed and optimized APIs to streamline client check-ins at St. Francis House Seattle, significantly reducing wait times and improving overall service efficiency.</li>
-								<li>Implemented robust database migration strategies, ensuring the system's scalability and reliability to handle millions of users. This approach to database management has prepared the system for future growth and high traffic volumes.</li>
-								<li>Collaborated closely with cross-functional teams, including developers, designers, and product managers, to enhance code quality and maintain system performance. Conducted regular code reviews, optimizing workflows, and efficient delivery of high-quality software solutions. </li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-2023</span>
-						<h2>Software Engineer</h2>
-						<span class="position">Atomic Loops</span>
-						<!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.  -->
-							<ul>
-								<li>Generated a comprehensive 20+ table database diagram and formulated SQL queries using dbdiagram.io, aligning with client specifications for seamless API integration with low latency.</li>
-								<li>optimized project workflows through the implementation of Django-based APIs and JWT authentication, significantly enhancing communication and project efficiency.</li>
-								<li>Managed a data compliance project for a manufacturing client, leading a team of five developers to build secure Django-based APIs in Python. Implemented JWT authentication and data encryption, resulting in a real-time AI-OpenCV quality control system processing over 1000 products daily, improving user experience and operational workflow.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-			</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2023-2025</span>
-    					<h2>Master's in Computer Science</h2>
-    					<span class="position">Seattle University</span>
-    					<p class="mt-4">Grade: 3.85 / 4</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2018-2022</span>
-    					<h2>Bachelor of Engineering</h2>
-    					<span class="position">Pune University</span>
-    					<p class="mt-4">Grade: 4 / 4</p>
-    				</div>
-				</div>
-    		</div>
-
-    		<!-- <div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div> -->
-    	</div>
-    </section>
-
-   
-
-    <section class="ftco-section" id="project-section">
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
       <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample web development, UI-UX designing , and machine learning projects on SQL, Python, figma & ML.</p>
-          </div>
+        <a class="navbar-brand" href="#home">
+          <span class="brand-text">Srishti Adkar</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Srishti1805/RetinaFace" class="block-20 zoom-effect" style="background-image: url('images/retinaface.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+      </div>
+    </nav>
 
-                <h3 class="heading"><a href="https://github.com/Srishti1805/RetinaFace">RetinaFace : A face detection tool</a></h3>
-                <p>This model leverages deep learning techniques to achieve highly accurate and efficient face detection. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/mckeemseattleu/St-Francis" class="block-20 zoom-effect" style="background-image: url('images/St.\ Francis.jpeg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/mckeemseattleu/St-Francis">St. Francis House, Seattle</a></h3>
-                <p>Designed a streamlined check-in process using MERN stack, reduce wait times, and provide better tracking and analysis of client data.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/Srishti1805/sumazon" class="block-20 zoom-effect" style="background-image: url('images/sumazon.jpeg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/Srishti1805/sumazon">SUMAZON - Seattle University's Campus store website</a></h3>
-                <p>
-					Developed a web application called SUMazon, an e-commerce platform for Seattle University's campus store. The tech stack includes a PL/SQL database, Django as the backend framework, and React for the frontend, following a three-tier architecture. </p>
-              </div>
-            </div>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-background">
+        <div class="hero-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/ydeshpande8/SpendSmart" class="block-20 zoom-effect" style="background-image: url('images/image.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/ydeshpande8/SpendSmart">SpendSmart - Budget management app</a></h3>
-				  <p>Developed a web application called SpendSmart, a budget management app for international students. The tech stack includes MongoDB, Express.js, React.js, and Node.js and Azure to host the application.Implemented Single Sign On in the project.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/Srishti1805/Team11_WebWizards" class="block-20 zoom-effect" style="background-image: url('images/HandyRent.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/Srishti1805/Team11_WebWizards">Handy Rent: Simplifying Rentals for Rarely Used Equipment.</a></h3>
-				  <p>Developed a web application called Handy Rent, an online marketplace for renting rarely used equipment. The website provides users with a seamless platform to easily rent a diverse array of items. The tech stack includes ASP, .NET, and JSON data and hosted the webapp on Azure.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
-    </section>
-
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      </div>
+      
       <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="4">0</strong>
-                <span>Achievements</span>
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <i class="fas fa-brain"></i>
+                <span>AI/ML Engineer</span>
+              </div>
+              
+              <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Srishti Adkar</span>
+              </h1>
+              
+              <div class="hero-subtitle">
+                <span id="typing-text"></span>
+              </div>
+              
+              <p class="hero-description">
+                AI/ML Engineer with 3+ years of strong background in machine learning, data engineering, and cloud technologies. Experienced in designing and deploying machine learning models, automating ETL pipelines, and optimizing data workflows to drive business efficiency. Skilled in model tuning, data preprocessing, and integrating AI solutions to enhance system performance and support data-driven decision-making in various industries.
+              </p>
+              
+              <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                  <i class="fas fa-eye"></i>
+                  View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                  <i class="fas fa-paper-plane"></i>
+                  Get In Touch
+                </a>
+              </div>
+              
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number">3+</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">10+</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">40+</span>
+                  <span class="stat-label">Students Mentored</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="10">0</strong>
-                <span>Projects</span>
+          
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="hero-image">
+              <div class="image-container">
+                <img src="images/about-me.jpeg" alt="Srishti Adkar" class="profile-image">
+                <div class="image-overlay"></div>
               </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="40">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div> -->
             </div>
           </div>
         </div>
       </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<!-- <div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div> -->
-			<!-- </div> -->
-		</div>
-	</section>
+    </section>
 
-
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <!-- About Section -->
+    <section id="about" class="about-section dark-section">
       <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+            <div class="section-header">
+              <h6 class="section-subtitle">About Me</h6>
+              <h2 class="section-title">AI/ML Engineer | Data Engineering | Cloud Solutions</h2>
+              <div class="section-divider"></div>
+            </div>
           </div>
         </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Washington, United States of America</p>
-	          </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up">
+            <div class="about-summary dark-summary">
+              <p>I'm proficient in Python, SQL, and Java, and skilled in using frameworks like Scikit-learn, TensorFlow, and XGBoost. I work comfortably with cloud platforms such as AWS, Azure, and GCP, and have hands-on experience with tools like Docker, REST APIs, and data visualization dashboards.</p>
+              <p>Whether it's crafting clean code, automating data pipelines, or solving complex problems with machine learning, I'm driven by curiosity, creativity, and the impact of technology. Let's build something amazing together!</p>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://2068513009">+ 1 206 851 3009</a></p>
-	          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-10">
+            <div class="skills-card-grid">
+              <div class="skill-card skill-card-purple">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <div class="skill-title">Full Stack Development</div>
+              </div>
+              <div class="skill-card skill-card-cyan">
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <div class="skill-title">Machine Learning</div>
+              </div>
+              <div class="skill-card skill-card-pink">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <div class="skill-title">Data Engineering</div>
+              </div>
+              <div class="skill-card skill-card-orange">
+                <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                <div class="skill-title">UI/UX Design</div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:sadkar@seattleu.edu">sadkar@seattleu.edu</a></p>
-	          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section dark-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <div class="section-header">
+                        <h6 class="section-subtitle">Professional Experience</h6>
+                        <h2 class="section-title">Career Highlights</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="exp-card-grid">
+                        <div class="exp-card" data-aos="fade-up">
+                            <div class="exp-header">
+                                <div class="exp-role">AI/ML Engineer Intern</div>
+                                <div class="exp-company">HSBC</div>
+                                <div class="exp-date">11/2024 – Present | Remote, USA</div>
+                            </div>
+                            <ul class="exp-list">
+                                <li>Developed an advanced Claims Fraud Detection System, collaborating with cross-functional teams to gather requirements and define key fraud detection metrics, achieving a 25% gain in fraud detection accuracy.</li>
+                                <li>Designed and automated robust ETL pipelines using Python, SQL, and AWS tools, improving data processing efficiency by 40%.</li>
+                                <li>Trained and deployed fraud detection models using Random Forest and XGBoost, reducing prediction errors and enhancing reliability by 30%.</li>
+                                <li>Integrated Autoencoder-based anomaly detection, improving detection of sophisticated fraud by 20% over traditional methods.</li>
+                                <li>Streamlined deployment with AWS Sagemaker and Docker, reducing pipeline run time by 35% and boosting operational efficiency.</li>
+                            </ul>
+                        </div>
+                        <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="exp-header">
+                                <div class="exp-role">Software Engineer Intern</div>
+                                <div class="exp-company">St. Francis House</div>
+                                <div class="exp-date">06/2024 – 09/2024 | Seattle, WA, USA</div>
+                            </div>
+                            <ul class="exp-list">
+                                <li>Developed data pipelines for automated data ingestion and preprocessing, leveraging Python and SQL to manage large-scale datasets on AWS and GCP.</li>
+                                <li>Designed SQL queries for sub-second latency and integrated them into REST APIs for high-traffic production environments.</li>
+                                <li>Automated data migration between AWS and GCP, ensuring zero data loss by applying data warehousing best practices.</li>
+                                <li>Implemented predictive analytics models (Random Forest, XGBoost) to optimize data workflows and improve processing efficiency.</li>
+                            </ul>
+                        </div>
+                        <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="exp-header">
+                                <div class="exp-role">ML Engineer</div>
+                                <div class="exp-company">Atomic Loops Pvt Ltd</div>
+                                <div class="exp-date">10/2021 – 08/2023 | Pune, India</div>
+                            </div>
+                            <ul class="exp-list">
+                                <li>Collaborated with cross-functional teams to define business objectives and deliver accurate audio classification models for the Audio Analysis PoC Project.</li>
+                                <li>Automated ETL pipelines for large-scale audio data using Python, Pandas, and Azure Data Factory, ensuring efficient data integration and storage.</li>
+                                <li>Developed and tuned ML models (CNN, RNN, XGBoost) for audio analysis, improving event detection and classification accuracy.</li>
+                                <li>Created interactive dashboards for audio feature analysis and predictions, enabling actionable insights for stakeholders.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section dark-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <div class="section-header">
+                        <h6 class="section-subtitle">Education</h6>
+                        <h2 class="section-title">Academic Background</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="edu-card-grid">
+                        <div class="edu-card" data-aos="fade-up">
+                            <div class="edu-degree">Master of Science in Computer Science</div>
+                            <div class="edu-school">Seattle University – Seattle, WA</div>
+                            <div class="edu-date">09/2023 – 06/2025</div>
+                        </div>
+                        <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="edu-degree">Bachelor of Engineering (Hons) in Computer Science</div>
+                            <div class="edu-school">Pune University – Pune, India</div>
+                            <div class="edu-date">08/2018 – 07/2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+            <div class="section-header">
+              <h6 class="section-subtitle">Portfolio</h6>
+              <h2 class="section-title">Featured Projects</h2>
+              <div class="section-divider"></div>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1FznY3yOUWZBrQfnnDxCDeyXlCjkJFcTC/view?usp=sharing">Srishti-CV</a></p>
-	          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/retinaface.png" alt="RetinaFace">
+                <div class="project-overlay">
+                  <a href="https://github.com/Srishti1805/RetinaFace" class="btn btn-light">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>RetinaFace: Face Detection Tool</h4>
+                <p>Advanced deep learning model for highly accurate and efficient face detection using computer vision techniques.</p>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">Computer Vision</span>
+                </div>
+              </div>
+            </div>
           </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/St. Francis.jpeg" alt="St. Francis House">
+                <div class="project-overlay">
+                  <a href="https://github.com/mckeemseattleu/St-Francis" class="btn btn-light">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>St. Francis House Check-in System</h4>
+                <p>Streamlined check-in process using MERN stack to reduce wait times and improve client data tracking.</p>
+                <div class="project-tags">
+                  <span class="tag">MERN Stack</span>
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/sumazon.jpeg" alt="SUMAZON">
+                <div class="project-overlay">
+                  <a href="https://github.com/Srishti1805/sumazon" class="btn btn-light">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>SUMAZON - Campus Store</h4>
+                <p>E-commerce platform for Seattle University's campus store with PL/SQL, Django, and React architecture.</p>
+                <div class="project-tags">
+                  <span class="tag">Django</span>
+                  <span class="tag">React</span>
+                  <span class="tag">PL/SQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/image.png" alt="SpendSmart">
+                <div class="project-overlay">
+                  <a href="https://github.com/ydeshpande8/SpendSmart" class="btn btn-light">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>SpendSmart - Budget Management</h4>
+                <p>Budget management app for international students with MongoDB, Express.js, React.js, and Node.js.</p>
+                <div class="project-tags">
+                  <span class="tag">MERN Stack</span>
+                  <span class="tag">Azure</span>
+                  <span class="tag">SSO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/HandyRent.png" alt="HandyRent">
+                <div class="project-overlay">
+                  <a href="https://github.com/Srishti1805/Team11_WebWizards" class="btn btn-light">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>HandyRent - Equipment Rental</h4>
+                <p>Online marketplace for renting rarely used equipment built with ASP.NET and hosted on Azure.</p>
+                <div class="project-tags">
+                  <span class="tag">ASP.NET</span>
+                  <span class="tag">Azure</span>
+                  <span class="tag">JSON</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		  <div class="container">
-			<br>
-			<br>
-			<!-- <div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div> -->
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/srishti-adkar-3022411b1/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://github.com/Srishti1805"><span class="icon-github"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+            <div class="section-header">
+              <h6 class="section-subtitle">Contact</h6>
+              <h2 class="section-title">Let's Connect</h2>
+              <div class="section-divider"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h5>Location</h5>
+              <p>Washington, United States of America</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h5>Phone</h5>
+              <p><a href="tel:+12068513009">+1 (206) 851-3009</a></p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h5>Email</h5>
+              <p><a href="mailto:sadkar@seattleu.edu">sadkar@seattleu.edu</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-5">
+          <div class="col-lg-12 text-center">
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/srishti-adkar-3022411b1/" class="social-link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/Srishti1805" class="social-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://drive.google.com/file/d/1FznY3yOUWZBrQfnnDxCDeyXlCjkJFcTC/view?usp=sharing" class="social-link" target="_blank">
+                <i class="fas fa-file-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>&copy; 2024 Srishti Adkar. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
-
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
